@@ -6,6 +6,7 @@ mod lesson_4;
 mod lesson_5;
 mod lesson_6;
 mod lesson_7;
+mod lesson_8;
 
 use lesson::Lesson;
 use lesson_2::Lesson2;
@@ -15,6 +16,7 @@ use lesson_4::Lesson4;
 use lesson_5::Lesson5;
 use lesson_6::Lesson6;
 use lesson_7::Lesson7;
+use lesson_8::Lesson8;
 
 fn main() {
     let _t1 = Lesson1 { name: String::from("BASIC DATATYPES") };
@@ -24,6 +26,7 @@ fn main() {
     let _t5 = Lesson5 { name: String::from("MODULES") };
     let _t6 = Lesson6 { name: String::from("INPUT AND OUTPUT") };
     let _t7 = Lesson7 { name: String::from("STRUCTS") };
+    let _t8 = Lesson8 { name: String::from("GENERIC TYPES") };
 
     // _t1.run();
     // _t2.run();
@@ -31,5 +34,6 @@ fn main() {
     // _t4.run();
     // _t5.run();
     // _t6.run();
-    _t7.run();
+    // _t7.run();
+    _t8.run();
 }
