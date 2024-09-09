@@ -71,7 +71,7 @@ where T: Add<Output = T> + Copy {
 }
 
 fn get_biggest<T: PartialOrd>(a: T, b: T) -> T {
-    if (a > b) {
+    if a > b {
         return a;
     } else {
         return b;

@@ -39,9 +39,9 @@ impl fmt::Display for Satellite {
 
 impl Altitude<Satellite> for Satellite {
     fn calc(&self) -> () {
-        let G: f64 = 0.0000000000667430;
-        let M: f64 = 5_972_000_000_000_000_000_000_000.0;
-        let res = (G * M) / self.velocity * self.velocity;
+        let g: f64 = 0.0000000000667430;
+        let m: f64 = 5_972_000_000_000_000_000_000_000.0;
+        let res = (g * m) / self.velocity * self.velocity;
         println!("The altitude is: {}", res);
     }
 }

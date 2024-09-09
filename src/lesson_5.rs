@@ -28,8 +28,8 @@ fn random_nm_game() -> () {
     while guess != solution {
         if guess != -1 {
             match guess {
-                _a if guess > solution => println!("Lower!"),
-                _b if guess < solution => println!("Higher!"),
+                a if a > solution => println!("{} Is not correct... Lower!", a),
+                b if b < solution => println!("{} Is not correct... Higher!", b),
                 _ => ()
             }
         }
