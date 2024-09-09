@@ -37,7 +37,7 @@ struct RGB (u8, u8, u8);
 
 impl Lesson for Lesson7 {
     fn run(&self) -> () {
-        println!("\n{}:", self.name);
+        Lesson7::print_name(&self.name);
 
         // No constructor
         let shuttle_1 = Shuttle {

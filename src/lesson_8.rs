@@ -33,7 +33,7 @@ impl Shape<u8, u8> {
 
 impl Lesson for Lesson8 {
     fn run(&self) -> () {
-        println!("\n{}:", self.name);
+        Lesson8::print_name(&self.name);
 
         let shape: Shape<&str, i32> = Shape::new("Explorer", 7);
         let proper_shape: Shape<u8, u8> = Shape::new(2, 5);
