@@ -10,7 +10,7 @@ impl Lesson for Lesson5 {
     fn run(&self) -> () {
         println!("\n{}:", self.name);
 
-        io_example();
+        // io_example();
         let number = random::<i32>();
         println!("Random number is {}", number);
 
@@ -35,7 +35,14 @@ fn random_nm_game() -> () {
         }
 
         let _ = io::stdin().read_line(&mut buffer).expect("Failed to read the line...");
-        guess = buffer.trim().parse::<i32>().expect("Failed to parse the number. Numbers only!");
+        let result = buffer.trim().parse::<i32>();
+        guess = match result {
+            Ok(val) => val,
+            Err(_) => {
+                println!("That was not a number! Try again!");
+                -1
+            }
+        };
         buffer.clear();
     }
 
